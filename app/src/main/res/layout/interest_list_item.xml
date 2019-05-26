@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_padding_size_small"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/margin_padding_size_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_800_50"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/interest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6DD5FA"
+            android:padding="@dimen/margin_padding_size_small"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            app:autoSizeTextType="uniform"
+            tools:text="@string/android_interest_list" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/light_dark</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#2980B9</color>
+
+    <color name="deep_blue_900">#2C5364</color>
+    <color name="deep_blue_A100">#6DD5FA</color>
+    <color name="deep_blue_A200">#6DD5FA</color>
+    <color name="light_dark">#3C84FC</color>
+    <color name="login_text_color">#FFFFFF</color>
+    <color name="grey_800_50">#CC9e9e9e</color>
+    <color name="orange_100_50">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+</resources>

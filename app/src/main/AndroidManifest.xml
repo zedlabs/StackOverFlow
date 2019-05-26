@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zedled.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.zedled.app.StackOverFlow"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.zedled.app.view.activities.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="stackexchange.com"
+                    android:pathPattern="/oauth/login_success"
+                    android:scheme="https" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.zedled.app.view.activities.HomeActivity"
+            android:label="@string/trending">
+        </activity>
+
+        <activity android:name="com.zedled.app.view.activities.ProfileActivity" />
+
+        <activity android:name="com.zedled.app.view.activities.InterestActivity"
+            android:label="Select Interest"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

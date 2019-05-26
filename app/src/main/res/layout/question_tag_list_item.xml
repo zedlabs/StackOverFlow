@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question_tagTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#B4FCFC"
+        android:padding="@dimen/margin_padding_size_very_small"
+        android:text="java"
+        android:textColor="#3F65B3"
+        android:textSize="@dimen/text_size_small" />
+
+</LinearLayout>

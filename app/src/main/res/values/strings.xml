@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">StackOverflow</string>
+    <string name="loading">Please wait …</string>
+    <string name="trending">StackOverFlow</string>
+    <string name="deselect_interest">Deselect Interest</string>
+    <string name="stack_overflow_login">Stack overflow</string>
+    <string name="addl_text_login">Login to fully enjoy Stackoverflow\'s features</string>
+    <string name="button_text_login">Login to Stack overflow</string>
+    <string name="submit">SUBMIT</string>
+    <string name="submit_interest">SUBMIT</string>
+    <string name="login_login">Login</string>
+    <string name="loading_profile">Loading...</string>
+    <string name="submit_profile">Submit</string>
+    <string name="android_content">android</string>
+    <string name="java_content">java</string>
+    <string name="javascript_content">javascript</string>
+    <string name="android_studio_tag_list">android-studio</string>
+    <string name="python_content">python</string>
+    <string name="android_interest_list">Android</string>
+    <string name="java_selected_interest">Java</string>
+    <string name="title_text_question_list">This is my title of question</string>
+    <string name="interest_selection_rule">Select four tags to proceed.</string>
+    <string name="default_question">what is the value of 0 factorial?</string>
+</resources>

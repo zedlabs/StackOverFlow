@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/question_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="0dp"
+        android:text="@string/default_question"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_tag_list" />
+
+    <TextView
+        android:id="@+id/static-question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asked By: "
+        android:textColor="#5C7CAC"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_detail" />
+
+    <TextView
+        android:id="@+id/question_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="John Cena"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/static-question"
+        app:layout_constraintTop_toBottomOf="@+id/question_detail" />
+
+    <TextView
+        android:id="@+id/question_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        android:textColor="#5C7CAC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_time" />
+
+    <TextView
+        android:id="@+id/static-answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Answers"
+        app:layout_constraintStart_toEndOf="@+id/question_answer"
+        app:layout_constraintTop_toBottomOf="@+id/question_time" />
+
+    <TextView
+        android:id="@+id/question_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#5C7CAC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_answer" />
+
+    <TextView
+        android:id="@+id/static-views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Views"
+        app:layout_constraintStart_toEndOf="@+id/question_views"
+        app:layout_constraintTop_toBottomOf="@+id/static-answers" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="@+id/question_answer"
+        app:layout_constraintTop_toBottomOf="@+id/static-views" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/question_tag_list"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 hours ago"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/static-question" />
+
+
+    <ImageView
+        android:id="@+id/question_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/static-answers"
+        app:layout_constraintTop_toBottomOf="@+id/question_time"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+</androidx.constraintlayout.widget.ConstraintLayout>
